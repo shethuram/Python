@@ -1,0 +1,195 @@
+/* Global */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background-color: #f4f6f8;
+}
+
+/* Layout */
+#mainContainer {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Panels */
+#chatContainer,
+#searchContainer {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+#chatContainer {
+  flex: 2;
+}
+
+#searchContainer {
+  flex: 1;
+  padding: 10px;
+}
+
+/*  CHAT HEADER */
+#chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* room name */
+#roomName {
+  color: #333;
+}
+
+/* users list */
+#users {
+  color: #ff0000;
+  font-size: 13px;
+}
+
+/* Scroll areas */
+#chat,
+#searchResults {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+#searchResults {
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+}
+
+/* Input area */
+.input-area {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+/* Inputs */
+input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#msg {
+  flex: 2;
+}
+
+.to-user {
+  flex: 1;
+  max-width: 140px;
+  background-color: #f9fafb;
+}
+
+/* Button */
+button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Messages */
+.message {
+ display: flex;
+  margin: 5px 0;
+}
+
+/* LEFT (others) */
+.message.other {
+  justify-content: flex-start;
+}
+
+/* RIGHT (me) */
+.message.me {
+  justify-content: flex-end;
+}
+
+.bubble {
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 60%;
+}
+
+/* others */
+.other .bubble {
+  background: #e4e6eb;
+}
+
+/* me */
+.me .bubble {
+  background: #007bff;
+  color: white;
+}
+
+/* System + typing */
+.system {
+  justify-content: center;
+}
+
+.system-bubble {
+  background: transparent;
+  color: gray;
+  font-style: italic;
+}
+
+.typing-msg {
+  font-style: italic;
+  color: gray;
+  float: left;
+}
+
+/* Private messages */
+.message.private {
+  border: 1px dashed #aaa;
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 60%;
+  display: inline-block; 
+}
+
+.message.private.me {
+  background-color: #41ef08;
+  float: right;
+}
+
+.message.private.other {
+  background-color: #f3e8ff;
+  float: left;
+}
+
+/* Username */
+.username {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Search items */
+.search-item {
+  padding: 6px;
+  border-bottom: 1px solid #f0d2d2;
+}
+
+/* Join section */
+#joinSection {
+  margin-bottom: 10px;
+}
+
