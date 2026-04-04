@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Chat Application</h2>
+
+<!-- JOIN SECTION -->
+<div id="joinSection">
+  <input id="username" placeholder="Enter username" />
+  <input id="room" placeholder="Enter room (e.g. general)" />
+  <button onclick="join()">Join</button>
+</div>
+
+<br>
+
+<div id="mainContainer" style="display: none;">
+
+  <!--  CHAT SECTION -->
+  <div id="chatContainer">
+
+     <!--  HEADER -->
+  <div id="chatHeader">
+    <span id="roomName"></span>
+    <span id="users"></span>
+  </div>
+
+    <div id="chat"></div>
+
+    <div class="input-area">
+      <input id="msg" placeholder="Type message" />
+      <input id="toUser" class="to-user" placeholder="To (optional)" />
+      <button onclick="send()">Send</button>
+    </div>
+
+  </div>
+
+  <!--  SEARCH SECTION -->
+  <div id="searchContainer">
+
+    <div id="searchResults"></div>
+
+    <div class="input-area">
+      <input id="searchInput" placeholder="Search messages..." />
+      <button onclick="searchMessages()">Search</button>
+      <button onclick="clearSearch()">Clear</button>
+    </div>
+
+  </div>
+
+</div>
+
+<!--  JS FILE LINK -->
+<script src="app.js"></script>
+
+</body>
+</html>
