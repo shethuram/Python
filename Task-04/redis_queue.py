@@ -2,10 +2,10 @@ import redis
 
 r = redis.Redis(host="localhost", port=6379)
 
-QUEUE = "queue:default"
-RETRY = "queue:retry"
-DEAD = "queue:dead"
-CHANNEL = "events"
+QUEUE = "queue:default"   # Redis List  — active jobs
+RETRY = "queue:retry"     # Redis Sorted Set — delayed retries
+DEAD  = "queue:dead"      # Redis List  — permanently failed
+CHANNEL = "events"        # Pub/Sub channel — event broadcast
 
 def push(task):
     r.lpush(QUEUE, task)
