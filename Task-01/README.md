@@ -120,7 +120,7 @@ python scheduler.py # for scheduled run
 ## Outputs
 
 # comparison result
-![](screenshots/o1.png)
+![](screenshots/output.png)
 ---
 # scrapped products
 ![](screenshots/o2.png)
