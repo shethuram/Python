@@ -4,4 +4,4 @@ from models.user import User
 
 class Post(Model):
     title = CharField(max_length=200)
-    author = ForeignKey(User)
+    user = ForeignKey(User)
